@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f1f5f9;
+}
+
+/* Hide scrollbar but keep scroll (e.g. mobile nav) */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e2e8f0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Touch-friendly buttons */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 focus:ring-primary-500 active:bg-primary-700;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface-200 text-surface-700 hover:bg-surface-300 focus:ring-surface-400;
+  }
+  
+  .btn-success {
+    @apply bg-green-500 text-white hover:bg-green-600 focus:ring-green-500;
+  }
+  
+  .btn-danger {
+    @apply bg-red-500 text-white hover:bg-red-600 focus:ring-red-500;
+  }
+  
+  .btn-lg {
+    @apply px-6 py-3 text-lg;
+  }
+  
+  .btn-sm {
+    @apply px-3 py-1.5 text-sm;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-surface-200;
+  }
+  
+  .input {
+    @apply w-full px-4 py-3 border border-surface-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all;
+  }
+  
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .badge-success {
+    @apply bg-green-100 text-green-800;
+  }
+  
+  .badge-warning {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+  
+  .badge-danger {
+    @apply bg-red-100 text-red-800;
+  }
+  
+  .badge-info {
+    @apply bg-blue-100 text-blue-800;
+  }
+}
+
+/* PIN pad styling */
+.pin-button {
+  @apply w-20 h-20 text-2xl font-semibold rounded-xl bg-surface-100 hover:bg-surface-200 active:bg-surface-300 transition-all duration-150 flex items-center justify-center select-none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Table card styling */
+.table-card {
+  @apply relative p-4 rounded-xl cursor-pointer transition-all duration-200 hover:scale-105 active:scale-95;
+  min-height: 100px;
+}
+
+.table-card.available {
+  @apply bg-green-50 border-2 border-green-200 hover:border-green-400;
+}
+
+.table-card.occupied {
+  @apply bg-orange-50 border-2 border-orange-300 hover:border-orange-500;
+}
+
+.table-card.reserved {
+  @apply bg-blue-50 border-2 border-blue-200 hover:border-blue-400;
+}
+
+.table-card.maintenance {
+  @apply bg-gray-100 border-2 border-gray-300 cursor-not-allowed opacity-60;
+}
+
+/* Product card */
+.product-card {
+  @apply p-3 rounded-lg bg-white border border-surface-200 cursor-pointer transition-all duration-150 hover:shadow-md active:scale-95;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Order item row */
+.order-item {
+  @apply flex items-center justify-between p-3 bg-surface-50 rounded-lg;
+}
+
+/* Loading spinner */
+.spinner {
+  @apply animate-spin h-5 w-5 border-2 border-surface-300 border-t-primary-500 rounded-full;
+}
+
+/* Slide animations */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Print: show only payment ticket */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #payment-ticket-print,
+  #payment-ticket-print * {
+    visibility: visible;
+  }
+  #payment-ticket-print {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: white;
+  }
+}
+
+/* Print: show report when printing from Reports page */
+@media print {
+  #report-print-area,
+  #report-print-area * {
+    visibility: visible !important;
+  }
+  #report-print-area {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    background: white !important;
+  }
+}

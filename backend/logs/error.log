@@ -1,0 +1,144 @@
+2026-02-01 01:33:03 [error]: Database query error: {"service":"showaya-pos","sql":"UPDATE products SET name = ?, description = ?, category_id = ?, price = ?, image_url = ?, is_available = ?, variable_price = ? WHERE id = ?","error":"Unknown column 'variable_price' in 'field list'"}
+2026-02-01 01:33:03 [error]: Server error: Unknown column 'variable_price' in 'field list' {"service":"showaya-pos","path":"/api/products/5","method":"PUT"}
+Error: Unknown column 'variable_price' in 'field list'
+    at PromisePool.execute (C:\Users\hp\Desktop\pos\node_modules\.pnpm\mysql2@3.16.2\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at Object.query (C:\Users\hp\Desktop\pos\backend\src\config\database.js:45:34)
+    at updateProduct (C:\Users\hp\Desktop\pos\backend\src\controllers\productController.js:401:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 01:37:18 [error]: Database query error: {"service":"showaya-pos","sql":"UPDATE products SET name = ?, description = ?, category_id = ?, price = ?, image_url = ?, is_available = ?, variable_price = ? WHERE id = ?","error":"Unknown column 'variable_price' in 'field list'"}
+2026-02-01 01:37:18 [error]: Server error: Unknown column 'variable_price' in 'field list' {"service":"showaya-pos","path":"/api/products/12","method":"PUT"}
+Error: Unknown column 'variable_price' in 'field list'
+    at PromisePool.execute (C:\Users\hp\Desktop\pos\node_modules\.pnpm\mysql2@3.16.2\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at Object.query (C:\Users\hp\Desktop\pos\backend\src\config\database.js:45:34)
+    at updateProduct (C:\Users\hp\Desktop\pos\backend\src\controllers\productController.js:401:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 11:44:07 [error]: Database query error: {"service":"showaya-pos","sql":"SELECT u.username, u.full_name\n       FROM users u\n       WHERE u.is_active = TRUE\n       ORDER BY u.full_name","error":""}
+2026-02-02 11:44:07 [error]: Server error: {"service":"showaya-pos","path":"/api/auth/login-options","method":"GET"}
+Error
+    at PromisePool.execute (C:\Users\hp\Desktop\pos\node_modules\.pnpm\mysql2@3.16.2\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at Object.query (C:\Users\hp\Desktop\pos\backend\src\config\database.js:45:34)
+    at getLoginOptions (C:\Users\hp\Desktop\pos\backend\src\controllers\authController.js:262:28)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:280:10)
+2026-02-02 11:44:07 [error]: Database query error: {"service":"showaya-pos","sql":"SELECT u.username, u.full_name\n       FROM users u\n       WHERE u.is_active = TRUE\n       ORDER BY u.full_name","error":""}
+2026-02-02 11:44:07 [error]: Server error: {"service":"showaya-pos","path":"/api/auth/login-options","method":"GET"}
+Error
+    at PromisePool.execute (C:\Users\hp\Desktop\pos\node_modules\.pnpm\mysql2@3.16.2\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at Object.query (C:\Users\hp\Desktop\pos\backend\src\config\database.js:45:34)
+    at getLoginOptions (C:\Users\hp\Desktop\pos\backend\src\controllers\authController.js:262:28)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:280:10)
+2026-02-02 11:44:22 [error]: Database query error: {"service":"showaya-pos","sql":"SELECT u.username, u.full_name\n       FROM users u\n       WHERE u.is_active = TRUE\n       ORDER BY u.full_name","error":""}
+2026-02-02 11:44:22 [error]: Server error: {"service":"showaya-pos","path":"/api/auth/login-options","method":"GET"}
+Error
+    at PromisePool.execute (C:\Users\hp\Desktop\pos\node_modules\.pnpm\mysql2@3.16.2\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at Object.query (C:\Users\hp\Desktop\pos\backend\src\config\database.js:45:34)
+    at getLoginOptions (C:\Users\hp\Desktop\pos\backend\src\controllers\authController.js:262:28)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:280:10)
+2026-02-02 11:44:23 [error]: Database query error: {"service":"showaya-pos","sql":"SELECT u.username, u.full_name\n       FROM users u\n       WHERE u.is_active = TRUE\n       ORDER BY u.full_name","error":""}
+2026-02-02 11:44:23 [error]: Server error: {"service":"showaya-pos","path":"/api/auth/login-options","method":"GET"}
+Error
+    at PromisePool.execute (C:\Users\hp\Desktop\pos\node_modules\.pnpm\mysql2@3.16.2\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at Object.query (C:\Users\hp\Desktop\pos\backend\src\config\database.js:45:34)
+    at getLoginOptions (C:\Users\hp\Desktop\pos\backend\src\controllers\authController.js:262:28)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:280:10)
+2026-02-03 02:17:09 [error]: Database query error: {"service":"showaya-pos","sql":"SELECT u.username, u.full_name\n       FROM users u\n       WHERE u.is_active = TRUE\n       ORDER BY u.full_name","error":""}
+2026-02-03 02:17:09 [error]: Server error: {"service":"showaya-pos","path":"/api/auth/login-options","method":"GET"}
+Error
+    at PromisePool.execute (C:\Users\hp\Desktop\pos\node_modules\.pnpm\mysql2@3.16.2\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at Object.query (C:\Users\hp\Desktop\pos\backend\src\config\database.js:45:34)
+    at getLoginOptions (C:\Users\hp\Desktop\pos\backend\src\controllers\authController.js:262:28)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:280:10)
+2026-02-03 02:17:09 [error]: Database query error: {"service":"showaya-pos","sql":"SELECT u.username, u.full_name\n       FROM users u\n       WHERE u.is_active = TRUE\n       ORDER BY u.full_name","error":""}
+2026-02-03 02:17:09 [error]: Server error: {"service":"showaya-pos","path":"/api/auth/login-options","method":"GET"}
+Error
+    at PromisePool.execute (C:\Users\hp\Desktop\pos\node_modules\.pnpm\mysql2@3.16.2\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at Object.query (C:\Users\hp\Desktop\pos\backend\src\config\database.js:45:34)
+    at getLoginOptions (C:\Users\hp\Desktop\pos\backend\src\controllers\authController.js:262:28)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:280:10)
+2026-02-03 02:30:36 [error]: Database query error: {"service":"showaya-pos","sql":"SELECT u.username, u.full_name\n       FROM users u\n       WHERE u.is_active = TRUE\n       ORDER BY u.full_name","error":""}
+2026-02-03 02:30:36 [error]: Server error: {"service":"showaya-pos","path":"/api/auth/login-options","method":"GET"}
+Error
+    at PromisePool.execute (C:\Users\hp\Desktop\pos\node_modules\.pnpm\mysql2@3.16.2\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at Object.query (C:\Users\hp\Desktop\pos\backend\src\config\database.js:45:34)
+    at getLoginOptions (C:\Users\hp\Desktop\pos\backend\src\controllers\authController.js:262:28)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:280:10)
+2026-02-03 02:30:37 [error]: Database query error: {"service":"showaya-pos","sql":"SELECT u.username, u.full_name\n       FROM users u\n       WHERE u.is_active = TRUE\n       ORDER BY u.full_name","error":""}
+2026-02-03 02:30:37 [error]: Server error: {"service":"showaya-pos","path":"/api/auth/login-options","method":"GET"}
+Error
+    at PromisePool.execute (C:\Users\hp\Desktop\pos\node_modules\.pnpm\mysql2@3.16.2\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at Object.query (C:\Users\hp\Desktop\pos\backend\src\config\database.js:45:34)
+    at getLoginOptions (C:\Users\hp\Desktop\pos\backend\src\controllers\authController.js:262:28)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:280:10)
+2026-02-03 02:30:50 [error]: Database query error: {"service":"showaya-pos","sql":"SELECT u.username, u.full_name\n       FROM users u\n       WHERE u.is_active = TRUE\n       ORDER BY u.full_name","error":""}
+2026-02-03 02:30:50 [error]: Server error: {"service":"showaya-pos","path":"/api/auth/login-options","method":"GET"}
+Error
+    at PromisePool.execute (C:\Users\hp\Desktop\pos\node_modules\.pnpm\mysql2@3.16.2\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at Object.query (C:\Users\hp\Desktop\pos\backend\src\config\database.js:45:34)
+    at getLoginOptions (C:\Users\hp\Desktop\pos\backend\src\controllers\authController.js:262:28)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:280:10)
+2026-02-03 02:30:51 [error]: Database query error: {"service":"showaya-pos","sql":"SELECT u.username, u.full_name\n       FROM users u\n       WHERE u.is_active = TRUE\n       ORDER BY u.full_name","error":""}
+2026-02-03 02:30:51 [error]: Server error: {"service":"showaya-pos","path":"/api/auth/login-options","method":"GET"}
+Error
+    at PromisePool.execute (C:\Users\hp\Desktop\pos\node_modules\.pnpm\mysql2@3.16.2\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at Object.query (C:\Users\hp\Desktop\pos\backend\src\config\database.js:45:34)
+    at getLoginOptions (C:\Users\hp\Desktop\pos\backend\src\controllers\authController.js:262:28)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\hp\Desktop\pos\node_modules\.pnpm\express@4.22.1\node_modules\express\lib\router\index.js:280:10)

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 44" fill="none" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Flame -->
+  <path d="M18 38c0-9 5-18 14-26 9 8 14 17 14 26 0 9-6 13-14 13S18 47 18 38z" fill="#0f172a"/>
+  <path d="M24 32c0-4 3-9 8-14 5 5 8 10 8 14 0 4-3 7-8 7s-8-3-8-7z" fill="#334155"/>
+  <!-- Showaya -->
+  <text x="50" y="30" font-family="system-ui, Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Showaya</text>
+</svg>
